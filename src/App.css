@@ -4,3 +4,13 @@ body{
     font-family: 'Fira Sans', sans-serif;
     margin: 0px;
 }
+.page{
+    
+}
+.page footer{
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10vh;
+    text-align: center;
+  }

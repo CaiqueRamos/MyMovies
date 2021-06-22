@@ -47,7 +47,11 @@ export default () =>{
 
         ))}
       </section>
-
+        
+      <footer>
+        Um modelo alternativo de site com base na netflix, <br/>utilizando 
+        TMDB, Todos os direitos estão reservados aos mesmos.
+      </footer>
     </div>
   )
 }
