@@ -1,3 +1,6 @@
+* {
+    transition: all ease 0.2s;
+}
 body{
     background-color: #251821;
     color: #FF5332;
@@ -13,4 +16,36 @@ body{
     display: flex;
     padding-bottom: 10vh;
     text-align: center;
+  }
+
+.pre-loader{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #251821;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pre-loader img{
+    height: 100px;
+    padding-top: -10px;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    display: none;
+    
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #FF5332;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #c24229;  /* creates padding around scroll thumb */
   }
