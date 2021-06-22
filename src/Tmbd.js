@@ -1,3 +1,5 @@
+import movieRow from "./components/movieRow";
+
 const MY_KEY = '11c870b1fa402b775f4510bb54ad9fc7'
 const URL_BASE ="https://api.themoviedb.org/3"
 
@@ -10,6 +12,7 @@ const basicFetch = async (endpoint) => {
 export default {
     getHomeList: async () =>{
         return [
+            
             {
                 slug: 'toprated',
                 title: 'For You',
@@ -40,6 +43,34 @@ export default {
                 title: 'Documentary',
                 items: await basicFetch(`/discover/movie?with_genres=99&lenguage=pt-BR&api_key=${MY_KEY}`)
             },
+            {
+                slug: 'originals',
+                title: 'Randons',
+                items: await basicFetch(`/discover/tv?with_network=213&lenguage=pt-BR&api_key=${MY_KEY}`)
+            },
         ];
+    },
+
+    getMovieInfo: async (MovieID, type) => {
+        let info = {};
+
+        if(MovieID){
+            switch (type) {
+                
+                case 'movie':
+                    info = await basicFetch(`/movie/${MovieID}?language=pt-BR&api_key=${MY_KEY}`);
+                break;
+
+                case 'tv':
+                    info = await basicFetch(`/tv/${MovieID}?language=pt-BR&api_key=${MY_KEY}`);
+                break;
+
+                default: 
+                    info = null;
+                break;
+            }
+        }
+
+        return info;
     }
 }

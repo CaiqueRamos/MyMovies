@@ -1,0 +1,78 @@
+.featured{
+    height: 100vh;
+}
+/* .featured--logo{
+    
+} */
+.featured--vertical{
+    width: inherit;
+    height: inherit;
+    display: block;
+    background: linear-gradient(to top, #251821 10%, transparent 90%);
+}
+.featured--horizontal{
+    width: inherit;
+    height: inherit;
+    display: block;
+    background: linear-gradient(to right, #251821 22%, transparent 100%);
+}
+
+.featured--originalName h1{
+    font-size: 10vh;
+    padding: 20vh 1vh 1vh 4vh;
+    width: 50%;
+}
+.featured--info span{
+    font-size:4vh;
+    color: white;
+    padding: 4vh 1vh 1vh 4vh;
+    width: 40%;
+}
+
+.featured--info p{
+    font-size:4vh;
+    color: #423e41;
+    padding: 2vh 1vh 1vh 4vh;
+    width: 40%;
+
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical; 
+}
+
+.featured--buttons{
+    font-size:4vh;
+    color: #423e41;
+    padding: 2vh 1vh 3vh 4vh;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+.featured--buttons button{
+    width: 22%;
+    margin-right: 1vh;
+    height: 8vh;
+    font-size: 80%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #FF5332 ;
+    color: white;
+}
+.featured--buttons button:hover{
+    background-color: #fa6a4d ;
+    color: white;
+}
+.featured--buttons .assistir{
+    background-color: white ;
+    color: #FF5332;
+    font-size: 90%;
+}
+.featured--buttons .assistir:hover{
+    background-color: #251821 ;
+    color: #FF5332;
+    font-size: 90%;
+    border:solid 4px #FF5332;
+}
+

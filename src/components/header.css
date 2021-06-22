@@ -1,0 +1,31 @@
+header{
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    height: 0px;
+    
+}
+.header--logo {
+    height: 100px;
+    padding: 4vh 1vh 1vh 4vh;
+}
+.header--logo img{
+    height: 100%;
+}
+
+.header--user {
+    height: 10px;
+    padding: 4vh 1vh 1vh 4vh;
+    margin-right: 20px;
+}
+.header--user img{
+    height: 80px;
+    -webkit-filter: blur(50px);
+	filter: blur(30px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.header--user:hover img{
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
